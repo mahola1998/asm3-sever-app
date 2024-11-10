@@ -12,3 +12,5 @@
 ::1 - - [10/Nov/2024:18:29:23 +0000] "GET /shop/product/672b5e5c2a270f07c9900e94 HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0"
 ::1 - - [10/Nov/2024:18:29:23 +0000] "GET /shop/product/672b5e5c2a270f07c9900e94 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0"
 ::1 - - [10/Nov/2024:18:29:26 +0000] "GET /shop/products HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0"
+::1 - - [10/Nov/2024:19:03:46 +0000] "OPTIONS /auth/login HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+::1 - - [10/Nov/2024:19:03:46 +0000] "POST /auth/login HTTP/1.1" 200 41 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
