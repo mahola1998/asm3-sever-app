@@ -141,7 +141,11 @@ io.on("connection", (socket) => {
 });
 
 mongoose
-  .connect(MONGODB_URI)
+  .connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    ssl: true,
+  })
   .then(() => server.listen(process.env.PORT || 5000))
   .catch((err) => {
     console.error("Database connection error:", err);
