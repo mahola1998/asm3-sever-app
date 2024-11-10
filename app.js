@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const fs = require("fs");
 const https = require("https");
 const mongoose = require("mongoose");
