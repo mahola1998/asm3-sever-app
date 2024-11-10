@@ -1,1 +1,2 @@
-web: nodemon app.js
+web: npm star
+.env
