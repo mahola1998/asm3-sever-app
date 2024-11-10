@@ -1,0 +1,8 @@
+{
+  "env": {
+    "MONGO_USER": "mahola1998",
+    "MONGO_PASSWORD": "Thanglama1998",
+    "MONGO_DEFAULT_DATABASE": "Asm3?retryWrites=true&w=majority&appName=Cluster0",
+    "PORT": 5000
+  }
+}
