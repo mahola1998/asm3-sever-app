@@ -46,7 +46,10 @@ app.use(morgan("combined", { stream: accessLogStream }));
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://asm3-client-74ece.web.app"],
+    origin: [
+      "https://asm3-admin-9ce38.web.app/",
+      "https://asm3-client-74ece.web.app",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
@@ -55,7 +58,10 @@ app.use(
 
 const io = socketIo(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://asm3-client-74ece.web.app"],
+    origin: [
+      "https://asm3-admin-9ce38.web.app/",
+      "https://asm3-client-74ece.web.app",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
