@@ -71,8 +71,8 @@ app.use(
     cookie: {
       maxAge: 180 * 60 * 1000,
       httpOnly: true,
-      secure: true,
-      sameSite: "none",
+      secure: process.env.NODE_ENV === "production", // Chỉ bật secure trên production
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
     },
   })
 );
