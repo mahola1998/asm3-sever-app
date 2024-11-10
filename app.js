@@ -64,14 +64,14 @@ const io = socketIo(server, {
 
 app.use(
   session({
-    secret: "your-secret-key",
+    secret: "my secret",
     resave: false,
     saveUninitialized: false,
     store: store,
     cookie: {
       maxAge: 180 * 60 * 1000,
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
+      secure: true,
       sameSite: "none",
     },
   })
