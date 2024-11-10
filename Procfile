@@ -1,2 +1,2 @@
-web: npm star
+web: npm start
 .env
