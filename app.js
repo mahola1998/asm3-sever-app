@@ -64,7 +64,7 @@ const io = socketIo(server, {
 
 app.use(
   session({
-    secret: "my secret",
+    secret: "your-secret-key",
     resave: false,
     saveUninitialized: false,
     store: store,
@@ -72,6 +72,7 @@ app.use(
       maxAge: 180 * 60 * 1000,
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
     },
   })
 );
